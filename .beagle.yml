@@ -1,7 +1,7 @@
 platform: 10.11.92.33
 
 workspace:
-  path: src/github.com/kubernetes-csi/external-snapshotter
+  path: src/github.com/kubernetes-csi/external-snapshotter/v3
 
 clone:
   git:
