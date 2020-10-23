@@ -1,0 +1,11 @@
+ARG BASE
+
+FROM $BASE
+
+LABEL maintainers="Kubernetes Authors"
+LABEL description="CSI External Snapshotter"
+
+ARG binary=./dist/csi-snapshotter
+
+COPY ${binary} csi-snapshotter
+ENTRYPOINT ["/csi-snapshotter"]
